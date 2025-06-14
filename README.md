@@ -1,2 +1,2 @@
-# Meu primeiro site, contendo meu portfolio pessoal.
+# Meu primeiro site
 ➡️[Acesse meu site](www.juniorvidal.com.br)
