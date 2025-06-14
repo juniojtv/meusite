@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  color: #282828;
+  text-align: center;
+}
+
+.header {
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.perfil {
+  margin-top: -60px;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #f1f1f1;
+  object-fit: cover;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.perfil h1 {
+  margin-top: 10px;
+  font-size: 1.8em;
+}
+
+.sobre-mim {
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.sobre-mim h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.midias {
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.midias h2 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+
+.lista-midias {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.lista-midias li {
+  text-align: center;
+}
+
+.lista-midias img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit:scale-down;
+  border: 7px solid #282828;
+  background-color: #282828;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lista-midias img:hover {
+  transform: scale(1.1);
+}
+
+.lista-midias span {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.95em;
+}
+
+.lista-midias a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: inherit;         /* Faz o link herdar a cor do texto padrão */
+}
