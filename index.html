@@ -3,30 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Junior Vidal</title>
+  <title data-i18n="pageTitle">Junior Vidal</title>
+  <script>document.documentElement.lang=localStorage.getItem('preferred-lang')||'pt-br';</script>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
 <body>
   <div class="container">
+    <nav class="lang-switcher" aria-label="Language">
+      <a href="#" data-lang="pt-br" class="lang-btn active" lang="pt-br">PT</a>
+      <a href="#" data-lang="en" class="lang-btn" lang="en">EN</a>
+    </nav>
     <header class="header">
-      <img src="./img/6915859.jpg" alt="Imagem de paisagem" class="banner" />
+      <img src="./img/6915859.jpg" alt="Imagem de paisagem" class="banner" data-i18n-alt="bannerAlt" />
       <div class="perfil">
-        <img src="./img/juniorinsta.png" alt="Minha Foto" class="foto-perfil" />
-        <h1>Bem-vindo ao meu site!</h1>
+        <img src="./img/juniorinsta.png" alt="Minha Foto" class="foto-perfil" data-i18n-alt="photoAlt" />
+        <h1 data-i18n="welcomeHeading">Bem-vindo ao meu site!</h1>
       </div>
     </header>
 
     <section class="sobre-mim">
-      <h2>Sobre mim</h2>
-      <p>Apaixonado por quebra-cabeças.
+      <h2 data-i18n="aboutHeading">Sobre mim</h2>
+      <p data-i18n="aboutText">Apaixonado por quebra-cabeças.
 
       </p>
     </section>
 
     <section class="midias">
-      <h2>Minhas mídias</h2>
+      <h2 data-i18n="mediaHeading">Minhas mídias</h2>
       <ul class="lista-midias">
         <li>
           <a href="https://app.xperiun.com/in/juniorvidal" target="_blank">
@@ -61,6 +66,7 @@
       </ul>
     </section>
   </div>
+  <script src="i18n.js"></script>
 </body>
 </html>
 
